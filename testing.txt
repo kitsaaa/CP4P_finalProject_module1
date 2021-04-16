@@ -1,0 +1,53 @@
+[nkorolkov@mtrx-node05pd CP4P-Final-project]$ gcc -Wall fundamentals.c -o fundamentals
+fundamentals.c: In function 'fundamentals':
+fundamentals.c:13:3: warning: 'gets' is deprecated (declared at /usr/include/stdio.h:638) [-Wdeprecated-declarations]
+   gets(buffer1);
+   ^
+fundamentals.c:18:4: warning: 'gets' is deprecated (declared at /usr/include/stdio.h:638) [-Wdeprecated-declarations]
+    gets(num_input);
+    ^
+fundamentals.c:18:4: warning: passing argument 1 of 'gets' from incompatible pointer type [enabled by default]
+In file included from fundamentals.h:6:0,
+                 from fundamentals.c:3:
+/usr/include/stdio.h:638:14: note: expected 'char *' but argument is of type 'int *'
+ extern char *gets (char *__s) __wur __attribute_deprecated__;
+              ^
+fundamentals.c:19:4: warning: passing argument 1 of 'atoi' from incompatible pointer type [enabled by default]
+    position = atoi(num_input);
+    ^
+In file included from fundamentals.h:7:0,
+                 from fundamentals.c:3:
+/usr/include/stdlib.h:147:12: note: expected 'const char *' but argument is of type 'int *'
+ extern int atoi (const char *__nptr)
+            ^
+fundamentals.c:34:3: warning: 'gets' is deprecated (declared at /usr/include/stdio.h:638) [-Wdeprecated-declarations]
+   gets(buffer2);
+   ^
+fundamentals.c:48:3: warning: 'gets' is deprecated (declared at /usr/include/stdio.h:638) [-Wdeprecated-declarations]
+   gets(source);
+   ^
+      ^						// compiler throwed only warnings, so i can execute
+/tmp/ccxUKBxb.o: In function `fundamentals':
+fundamentals.c:(.text+0x28): warning: the `gets' function is dangerous and should not be used.
+[nkorolkov@mtrx-node05pd CP4P-Final-project]$ fundamentals
+
+*** Start of Indexing Strings Demo ***		// Start of program output
+Type a string (q - to quit):
+Putin
+Type the character position within the string:
+3
+The character found at 3 position is 'i' // Correct output, even though if you count character from 1 correct answer
+Type a string (q - to quit):		 // will be char 't'
+12345678
+Type the character position within the string:
+4
+The character found at 4 position is '5' // This can be fixed very quiqly (if neccesary)
+Type a string (q - to quit):
+Alloha
+Type the character position within the string:
+0
+The character found at 0 position is 'A'
+Type a string (q - to quit):
+q
+*** End of Indexing Strings Demo***
+
