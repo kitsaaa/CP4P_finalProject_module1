@@ -27,7 +27,7 @@ void fundamentals() {
 	}
 	printf("*** End of Indexing Strings Demo***\n");
 
-/*	printf("*** Start of Measuring Strings Demo***\n");
+	printf("*** Start of Measuring Strings Demo***\n");
 	char buffer2[80];
 	while (TRUE) {
 		printf("Type a string (q - to quit):\n");
@@ -37,7 +37,7 @@ void fundamentals() {
 		printf("The lenght is %lu\n", strlen(buffer2));		// Very easy part, main logic is being produced by only one function
 	}
 	printf("*** End of Measuring Strings Demo ***\n\n");
-
+/*
 	printf("*** Start of Copying Strings Demo ***\n");
 	char destination[80];
 	char source[80];

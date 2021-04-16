@@ -51,3 +51,16 @@ Type a string (q - to quit):
 q
 *** End of Indexing Strings Demo***
 
+*** Start of Measuring Strings Demo***
+Type a string (q - to quit):
+CrewDragon
+The lenght is 10		// Correct
+Type a string (q - to quit):
+ThisStringIs22InLenght
+The lenght is 22		// Exactly
+Type a string (q - to quit):
+12345678910111213
+The lenght is 17		// This one is correct too, but if lenght of string will be more than 80, program will
+Type a string (q - to quit):	// not work as it should
+q
+*** End of Measuring Strings Demo ***
