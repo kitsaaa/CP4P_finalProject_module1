@@ -37,7 +37,7 @@ void fundamentals() {
 		printf("The lenght is %lu\n", strlen(buffer2));		// Very easy part, main logic is being produced by only one function
 	}
 	printf("*** End of Measuring Strings Demo ***\n\n");
-/*
+
 	printf("*** Start of Copying Strings Demo ***\n");
 	char destination[80];
 	char source[80];
@@ -59,4 +59,3 @@ int main() {
 	fundamentals();						// Calling fundamentals() function
 	return 0;
 }
-*/

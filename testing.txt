@@ -64,3 +64,29 @@ The lenght is 17		// This one is correct too, but if lenght of string will be mo
 Type a string (q - to quit):	// not work as it should
 q
 *** End of Measuring Strings Demo ***
+
+*** Start of Copying Strings Demo ***
+Destination string is reset to empty
+Type a source string (q - to quit):
+ThisIsaSourceString
+New destination string is 'ThisIsaSourceString':	// correct, this one works fine
+Destination string is reset to empty
+Type a source string (q - to quit):
+111222333
+New destination string is '111222333':
+Destination string is reset to empty
+Type a source string (q - to quit):		
+qqq					
+New destination string is 'qqq':	//
+Destination string is reset to empty	//
+Type a source string (q - to quit):	//
+q1					// Played a little with q's and 0 to make sure everything works properly
+New destination string is 'q1':		//
+Destination string is reset to empty	//
+Type a source string (q - to quit):	//
+0					//
+New destination string is '0':
+Destination string is reset to empty
+Type a source string (q - to quit):
+q
+*** End of Copying Strings Demo ***	// Testing: succsessful, everything works properly
