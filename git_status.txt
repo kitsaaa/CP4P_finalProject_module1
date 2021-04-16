@@ -1,0 +1,134 @@
+Nekit@DESKTOP-B8TP0JK MINGW64 ~
+$ pwd
+/c/Users/Nekit
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~
+$ cd source/repos/CP4P_finalProject_module1
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1
+$ git init
+Initialized empty Git repository in C:/Users/Nekit/source/repos/CP4P_finalProject_module1/.git/
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        CP4P_finalProject_module1.sln
+        CP4P_finalProject_module1.vcxproj
+        CP4P_finalProject_module1.vcxproj.filters
+        CP4P_finalProject_module1.vcxproj.user
+        fundamentals.c
+        fundamentals.h
+        testing.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git add fundamentals.c fundamentals.h testing.txt
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   fundamentals.c
+        new file:   fundamentals.h
+        new file:   testing.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        CP4P_finalProject_module1.sln
+        CP4P_finalProject_module1.vcxproj
+        CP4P_finalProject_module1.vcxproj.filters
+        CP4P_finalProject_module1.vcxproj.user
+
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git commit -m "fundamentals_V1"			// commiting first version
+[master (root-commit) 4613260] fundamentals_V1
+ 3 files changed, 129 insertions(+)
+ create mode 100644 fundamentals.c
+ create mode 100644 fundamentals.h
+ create mode 100644 testing.txt
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   fundamentals.c
+        modified:   testing.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        CP4P_finalProject_module1.sln
+        CP4P_finalProject_module1.vcxproj
+        CP4P_finalProject_module1.vcxproj.filters
+        CP4P_finalProject_module1.vcxproj.user
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git add fundamentals.c testing.txt
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git commit -m "fundamentals_V2"			// commiting second version
+[master 660f687] fundamentals_V2
+ 2 files changed, 15 insertions(+), 2 deletions(-)
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   fundamentals.c
+        modified:   testing.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        CP4P_finalProject_module1.sln
+        CP4P_finalProject_module1.vcxproj
+        CP4P_finalProject_module1.vcxproj.filters
+        CP4P_finalProject_module1.vcxproj.user
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git add fundamentals.c testing.txt
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git commit -m "fundamentals_V3"			// commiting third version
+[master 5704c1b] fundamentals_V3
+ 2 files changed, 27 insertions(+), 2 deletions(-)
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git remote add origin https://github.com/kitsaaa/CP4P_finalProject_module1.git
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ git push -u origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 2.95 KiB | 2.95 MiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/kitsaaa/CP4P_finalProject_module1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Nekit@DESKTOP-B8TP0JK MINGW64 ~/source/repos/CP4P_finalProject_module1 (master)
+$ exit
